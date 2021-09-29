@@ -1,0 +1,118 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article {
+	display: block;
+}
+
+body {
+	background-image: url("ptrbackground.jpg");
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/** Nav takes most of the first col**/
+nav {
+	background-color: #7ec1e2;
+	width: 100%;
+	grid-column: 1;
+	grid-row: 2/4;
+}
+
+nav ul {
+	font-size: 1.2em;
+	color: black;
+	list-style: none;
+	font-weight: bolder;
+	padding-left: 10px;
+}
+
+nav a:link, nav a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+/**header takes whole first row of grid***/
+header {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+
+/** h1 has a img background***/
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+	color: #FFFFFF;	
+	background-image: url("sunset.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+h2 {
+	color: #3399CC;
+}
+
+h1, h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+dt {
+	color: #000033;
+}
+
+/*** footer takes last row but not first col ***/
+footer {
+	grid-column-start: 2;
+	grid-row-start: 3;
+	font-family: Georgia, "Times New Roman", serif;
+	padding-top: 20px;
+	font-style: italic;
+	padding-left: 20px;
+	padding-bottom: 40px;
+	background: #FFFFFF;
+}
+
+
+/** decided to make the main area of page a grid**/
+#wrapper{
+	width: 80%;
+	min-width: 600px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 150px auto;
+}
+
+#content {
+	grid-row-start: 2;
+	padding-left: 20px;
+	background: #FFFFFF;
+}
+
+/** img is the only thing to be floating***/
+#content img{
+	float: left;
+	padding-right: 40px;
+}
+
+#content span{
+	color: #3399CC;
+	font-weight: bolder;
+
+}
+
+#content ul{
+	list-style-image: url("marker.gif");
+	padding-left: 30px;
+}
+
+
+#contact {	
+	font-size: 90%;
+	grid-row-start: 2;
+	background: #FFFFFF;
+}
+
+
